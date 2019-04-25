@@ -27,7 +27,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
 sass:
-  sass_dir: assets
+  sass_dir: assets/css/
 permalink: /:title/
 
 # Exclude from processing.

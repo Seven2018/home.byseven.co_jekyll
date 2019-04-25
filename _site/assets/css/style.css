@@ -15,28 +15,28 @@
 /* --- super wide screens, from 1440px --- */
 @font-face {
   font-family: "InfoDispSemibold Roman";
-  src: url("../assets/fonts/InfoDispSemibold-Roman.otf"); }
+  src: url("../fonts/InfoDispSemibold-Roman.otf"); }
 @font-face {
   font-family: "InfoDispBook Italic";
-  src: url("../assets/fonts/InfoDispBook-Italic.otf"); }
+  src: url("../fonts/InfoDispBook-Italic.otf"); }
 @font-face {
   font-family: "InfoDispBook Roman";
-  src: url("../assets/fonts/InfoDispBook-Roman.otf"); }
+  src: url("../fonts/InfoDispBook-Roman.otf"); }
 @font-face {
   font-family: "InfoDispBold Roman";
-  src: url("../assets/fonts/InfoDispBold-Roman.otf"); }
+  src: url("../fonts/InfoDispBold-Roman.otf"); }
 @font-face {
   font-family: "InfoText Normal";
-  src: url("../assets/fonts/InfoText-Normal.otf"); }
+  src: url("../fonts/InfoText-Normal.otf"); }
 @font-face {
   font-family: "InfoTextRegular Italic";
-  src: url("../assets/fonts/InfoTextRegular-Italic.otf"); }
+  src: url("../fonts/InfoTextRegular-Italic.otf"); }
 @font-face {
   font-family: "InfoTextSemibold Roman";
-  src: url("../assets/fonts/InfoTextSemibold-Roman.otf"); }
+  src: url("../fonts/InfoTextSemibold-Roman.otf"); }
 @font-face {
   font-family: "InfoTextBook Italic";
-  src: url("../assets/fonts/InfoTextBook-Italic.otf"); }
+  src: url("../fonts/InfoTextBook-Italic.otf"); }
 /*
 @font-face{
 	font-family: "InfoDispBold ItalicExp";
@@ -639,7 +639,7 @@ body {
     margin-bottom: 2px; }
   .home-price-content h4 {
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 22px;
     min-width: 60px; }
   @media only screen and (min-width: 64em) {
     .home-price-content {
