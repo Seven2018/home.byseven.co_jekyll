@@ -1,0 +1,698 @@
+/**
+ * Mediaqueries following the mobile-first method
+ * CSS are set from mobile first, then rules are extented to:
+ * - small devices (e.g. tablets in portrait orientation) : 600 to 799px
+ * - medium devices (e.g. low cost laptops) : 800px to 1023px
+ * - classic resolutions (superior tablets, computers, etc.) : 1024px and above
+ */
+/* ====== SETTINGS ====== */
+/* ====== QUERIES ====== */
+/* --- medium screens, from 600px --- */
+/* --- only medium-low screens, from 600px to 799px --- */
+/* --- only medium-high screens, from 800px to 1023px --- */
+/* --- large screens, from 1024px --- */
+/* --- wider screens, from 1280px --- */
+/* --- super wide screens, from 1440px --- */
+@font-face {
+  font-family: "InfoDispSemibold Roman";
+  src: url("../assets/fonts/InfoDispSemibold-Roman.otf"); }
+@font-face {
+  font-family: "InfoDispBook Italic";
+  src: url("../assets/fonts/InfoDispBook-Italic.otf"); }
+@font-face {
+  font-family: "InfoDispBook Roman";
+  src: url("../assets/fonts/InfoDispBook-Roman.otf"); }
+@font-face {
+  font-family: "InfoDispBold Roman";
+  src: url("../assets/fonts/InfoDispBold-Roman.otf"); }
+@font-face {
+  font-family: "InfoText Normal";
+  src: url("../assets/fonts/InfoText-Normal.otf"); }
+@font-face {
+  font-family: "InfoTextRegular Italic";
+  src: url("../assets/fonts/InfoTextRegular-Italic.otf"); }
+@font-face {
+  font-family: "InfoTextSemibold Roman";
+  src: url("../assets/fonts/InfoTextSemibold-Roman.otf"); }
+@font-face {
+  font-family: "InfoTextBook Italic";
+  src: url("../assets/fonts/InfoTextBook-Italic.otf"); }
+/*
+@font-face{
+	font-family: "InfoDispBold ItalicExp";
+	src: url("../fonts/InfoDispBold-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBold Italic";
+	src: url("../fonts/InfoDispBold-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBold RomanExp";
+	src: url("../fonts/InfoDispBold-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBold Roman";
+	src: url("../fonts/InfoDispBold-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBoldTf Italic";
+	src: url("../fonts/InfoDispBoldTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBoldTf Roman";
+	src: url("../fonts/InfoDispBoldTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBook ItalicExp";
+	src: url("../fonts/InfoDispBook-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBook RomanExp";
+	src: url("../fonts/InfoDispBook-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBookTf Italic";
+	src: url("../fonts/InfoDispBookTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispBookTf Roman";
+	src: url("../fonts/InfoDispBookTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoDispMedium ItalicExp";
+	src: url("../fonts/InfoDispMedium-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispMedium Italic";
+	src: url("../fonts/InfoDispMedium-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispMedium RomanExp";
+	src: url("../fonts/InfoDispMedium-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispMedium Roman";
+	src: url("../fonts/InfoDispMedium-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoDispMediumTf Italic";
+	src: url("../fonts/InfoDispMediumTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispMediumTf Roman";
+	src: url("../fonts/InfoDispMediumTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoDispRegular ItalicExp";
+	src: url("../fonts/InfoDispRegular-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispRegular Italic";
+	src: url("../fonts/InfoDispRegular-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispRegular RomanExp";
+	src: url("../fonts/InfoDispRegular-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispRegular Roman";
+	src: url("../fonts/InfoDispRegular-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoDispRegularTf Italic";
+	src: url("../fonts/InfoDispRegularTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispRegularTf Roman";
+	src: url("../fonts/InfoDispRegularTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoDispSemibold ItalicExp";
+	src: url("../fonts/InfoDispSemibold-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispSemibold Italic";
+	src: url("../fonts/InfoDispSemibold-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispSemibold RomanExp";
+	src: url("../fonts/InfoDispSemibold-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoDispSemiboldTf Italic";
+	src: url("../fonts/InfoDispSemiboldTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoDispSemiboldTf Roman";
+	src: url("../fonts/InfoDispSemiboldTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBold CapsExp";
+	src: url("../fonts/InfoTextBold-CapsExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBold CapsItaExp";
+	src: url("../fonts/InfoTextBold-CapsItaExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBold CapsIta";
+	src: url("../fonts/InfoTextBold-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoText BoldCaps";
+	src: url("../fonts/InfoText-BoldCaps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBold Caps";
+	src: url("../fonts/InfoTextBold-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBold ItalicExp";
+	src: url("../fonts/InfoTextBold-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBold Italic";
+	src: url("../fonts/InfoTextBold-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoText Bold";
+	src: url("../fonts/InfoText-Bold.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBold RomanExp";
+	src: url("../fonts/InfoTextBold-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBold Roman";
+	src: url("../fonts/InfoTextBold-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBoldTf CapsIta";
+	src: url("../fonts/InfoTextBoldTf-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBoldTf Caps";
+	src: url("../fonts/InfoTextBoldTf-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBoldTf Italic";
+	src: url("../fonts/InfoTextBoldTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBoldTf Roman";
+	src: url("../fonts/InfoTextBoldTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBook CapsExp";
+	src: url("../fonts/InfoTextBook-CapsExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBook CapsItaExp";
+	src: url("../fonts/InfoTextBook-CapsItaExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBook CapsIta";
+	src: url("../fonts/InfoTextBook-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoText BookCaps";
+	src: url("../fonts/InfoText-BookCaps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBook Caps";
+	src: url("../fonts/InfoTextBook-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBook ItalicExp";
+	src: url("../fonts/InfoTextBook-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoText Book";
+	src: url("../fonts/InfoText-Book.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBook RomanExp";
+	src: url("../fonts/InfoTextBook-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBook Roman";
+	src: url("../fonts/InfoTextBook-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBookTf CapsIta";
+	src: url("../fonts/InfoTextBookTf-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBookTf Caps";
+	src: url("../fonts/InfoTextBookTf-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBookTf Italic";
+	src: url("../fonts/InfoTextBookTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoTextBookTf Roman";
+	src: url("../fonts/InfoTextBookTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMedium CapsExp";
+	src: url("../fonts/InfoTextMedium-CapsExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMedium CapsItaExp";
+	src: url("../fonts/InfoTextMedium-CapsItaExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMedium CapsIta";
+	src: url("../fonts/InfoTextMedium-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoText MediumCaps";
+	src: url("../fonts/InfoText-MediumCaps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMedium Caps";
+	src: url("../fonts/InfoTextMedium-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMedium ItalicExp";
+	src: url("../fonts/InfoTextMedium-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMedium Italic";
+	src: url("../fonts/InfoTextMedium-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoText Medium";
+	src: url("../fonts/InfoText-Medium.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMedium RomanExp";
+	src: url("../fonts/InfoTextMedium-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMedium Roman";
+	src: url("../fonts/InfoTextMedium-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMediumTf CapsIta";
+	src: url("../fonts/InfoTextMediumTf-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMediumTf Caps";
+	src: url("../fonts/InfoTextMediumTf-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMediumTf Italic";
+	src: url("../fonts/InfoTextMediumTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoTextMediumTf Roman";
+	src: url("../fonts/InfoTextMediumTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoText NormalCaps";
+	src: url("../fonts/InfoText-NormalCaps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegular CapsExp";
+	src: url("../fonts/InfoTextRegular-CapsExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegular CapsItaExp";
+	src: url("../fonts/InfoTextRegular-CapsItaExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegular CapsIta";
+	src: url("../fonts/InfoTextRegular-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegular Caps";
+	src: url("../fonts/InfoTextRegular-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegular ItalicExp";
+	src: url("../fonts/InfoTextRegular-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegular RomanExp";
+	src: url("../fonts/InfoTextRegular-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegular Roman";
+	src: url("../fonts/InfoTextRegular-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegularTf CapsIta";
+	src: url("../fonts/InfoTextRegularTf-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegularTf Caps";
+	src: url("../fonts/InfoTextRegularTf-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegularTf Italic";
+	src: url("../fonts/InfoTextRegularTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoTextRegularTf Roman";
+	src: url("../fonts/InfoTextRegularTf-Roman.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemibold CapsExp";
+	src: url("../fonts/InfoTextSemibold-CapsExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemibold CapsItaExp";
+	src: url("../fonts/InfoTextSemibold-CapsItaExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemibold CapsIta";
+	src: url("../fonts/InfoTextSemibold-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemibold Caps";
+	src: url("../fonts/InfoTextSemibold-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoText SemiBoldCaps";
+	src: url("../fonts/InfoText-SemiBoldCaps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemibold ItalicExp";
+	src: url("../fonts/InfoTextSemibold-ItalicExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemibold Italic";
+	src: url("../fonts/InfoTextSemibold-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoText SemiBold";
+	src: url("../fonts/InfoText-SemiBold.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemibold RomanExp";
+	src: url("../fonts/InfoTextSemibold-RomanExp.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemiboldTf CapsIta";
+	src: url("../fonts/InfoTextSemiboldTf-CapsIta.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemiboldTf Caps";
+	src: url("../fonts/InfoTextSemiboldTf-Caps.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemiboldTf Italic";
+	src: url("../fonts/InfoTextSemiboldTf-Italic.otf");
+}
+
+@font-face{
+	font-family: "InfoTextSemiboldTf Roman";
+	src: url("../fonts/InfoTextSemiboldTf-Roman.otf");
+}
+*/
+p {
+  font-size: 1.3rem;
+  font-family: "InfoDispBook Roman"; }
+
+h2 {
+  font-family: "InfoDispBold Roman";
+  font-size: 2.4rem;
+  margin: 15px 0 35px 0; }
+
+h4 {
+  font-size: 1.4rem;
+  font-family: "InfoDispBold Roman";
+  margin: 0; }
+
+body {
+  margin: 0; }
+
+.home-wrapper {
+  position: relative;
+  height: 100%; }
+
+.home-navbar {
+  z-index: 10000;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  transition: 0.5s background-color ease;
+  padding-top: 1rem; }
+  .home-navbar .home-logo {
+    height: 100%;
+    width: auto; }
+  .home-navbar .home-navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 10px; }
+
+.home-navbar-links > a {
+  margin: 0 10px;
+  font-family: "InfoDispSemibold Roman";
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); }
+
+.scrolled {
+  background-color: white;
+  box-shadow: 0 15px 35px rgba(126, 87, 88, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
+  .scrolled a {
+    color: black;
+    text-shadow: none; }
+
+@media only screen and (min-width: 37.5em) {
+  .home-navbar {
+    padding-top: 0;
+    padding-left: 20px; }
+    .home-navbar nav a {
+      margin: 0 20px;
+      font-size: 1.4em; } }
+@media only screen and (min-width: 64em) {
+  .home-navbar nav a {
+    margin: 0 30px; } }
+.home-cover {
+  height: calc(100vh - 8vh);
+  position: relative; }
+
+.home-illustration {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  bottom: 0; }
+
+.home-presentation {
+  min-height: 90vh;
+  background-color: #4f6453;
+  position: relative; }
+  .home-presentation h2 {
+    color: white; }
+  .home-presentation .home-presentation-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center; }
+    @media only screen and (min-width: 64em) {
+      .home-presentation .home-presentation-content {
+        flex-direction: row;
+        justify-content: space-around; } }
+  .home-presentation .home-presentation-pictures {
+    text-align: center; }
+  .home-presentation .home-presentation-pictures > img {
+    width: 75vw;
+    height: auto;
+    margin: 50px 0; }
+    @media only screen and (min-width: 64em) {
+      .home-presentation .home-presentation-pictures > img {
+        width: 49vw;
+        height: auto;
+        margin: 0 30px; } }
+
+.home-presentation-text {
+  position: relative;
+  width: 75vw;
+  height: auto;
+  text-align: center; }
+  @media only screen and (min-width: 64em) {
+    .home-presentation-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 49vw;
+      min-height: 70vh;
+      margin: 0 30px;
+      text-align: left; } }
+
+.home-price {
+  background-color: #ead387;
+  position: relative;
+  padding: 1.25rem 3.125rem; }
+  .home-price h2 {
+    text-align: center;
+    margin-bottom: 35px; }
+
+.home-price-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .home-price-content p {
+    margin-bottom: 2px; }
+  .home-price-content h4 {
+    text-align: center;
+    margin-bottom: 35px;
+    min-width: 60px; }
+  @media only screen and (min-width: 64em) {
+    .home-price-content {
+      flex-direction: row; }
+      .home-price-content h4 {
+        text-align: left;
+        margin-right: 120px; } }
+
+.home-price-content-pair {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 40px; }
+  @media only screen and (min-width: 64em) {
+    .home-price-content-pair {
+      width: 38%; } }
+
+.home-price-content-unit {
+  width: 250px;
+  text-align: center; }
+  .home-price-content-unit h4 {
+    margin: 0; }
+  @media only screen and (min-width: 64em) {
+    .home-price-content-unit {
+      padding: 0;
+      text-align: left; } }
+
+.home-contact {
+  height: 70vh;
+  background-color: #dba63e;
+  padding: 1.25rem 3.125rem; }
+  .home-contact h2 {
+    color: white;
+    text-align: center; }
+  .home-contact .home-contact-content {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    height: 45vh; }
+    .home-contact .home-contact-content img {
+      height: auto;
+      width: 70vw; }
+
+.home-contact-address {
+  width: 30vw;
+  margin-left: 2vw; }
+
+.home-presentation {
+  padding: 1.25rem; }
+  .home-presentation h2 {
+    text-align: center; }
+
+#presentation, #price {
+  position: absolute;
+  top: -8vh; }
