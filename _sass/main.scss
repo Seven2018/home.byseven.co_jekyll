@@ -1,24 +1,65 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
-p {
-  font-size: 1.3rem;
-  font-family: "InfoDispBook Roman";
+h1 {
+    font-family: "InfoDispBold Roman";
+    font-size: 24px;
+
+    @include from-medium {
+      font-size: 28px
+    }
+
+    @include from-large {
+      font-size: 40px;
+    }
 }
 
 h2 {
-  font-family: "InfoDispBold Roman";
-  font-size: 2.4rem;
-  margin: 15px 0 35px 0;
+    font-family: "InfoText Normal";
+    font-size: 20px;
+
+    @include from-medium {
+      font-size: 24px
+    }
+
+    @include from-large {
+      font-size: 30px;
+    }
 }
 
-h4 {
-  font-size: 1.4rem;
-  font-family: "InfoDispBold Roman";
-  margin: 0;
+h3 {
+  font-family: "Infotext Normal";
+  font-size: 16px;
+
+  @include from-medium {
+    font-size: 20px;
+  }
+
+  @include from-large {
+    font-size: 24px;
+  }
 }
 
-body {
-  margin: 0;
+a {
+  color: black;
+  font-family: "InfoDispSemiBold Roman";
+  &:hover, &:focus {
+    text-decoration: none;
+    color: black;
+  }
 }
+
+p {
+  font-family: "InfoText Normal";
+  font-size: 16px;
+
+  @include from-large {
+    font-size: 20px;
+  }
+}
+
 
 // NAVBAR
 
@@ -27,69 +68,79 @@ body {
   height: 100%;
 }
 
-.home-navbar {
-  z-index: 10000;
-  // width: 100vw;
-  height: 8vh;
+.navbar-seven {
+  // background-color: rgba(255,255,255,0);
+  background-color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 20px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  transition: 0.5s background-color ease;
-  padding-top: 1rem;
+  z-index: 10;
+  transition: all 0.8s ease;
 
-  .home-logo {
-    height: 100%;
-    width: auto;
+  img {
+    // height: 33px;
+    width: 150px;
+    margin: 7px 0;
   }
-  .home-navbar-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 10px;
-  }
-}
-
-.home-navbar-links > a {
-  margin: 0 10px;
-  font-family: "InfoDispSemibold Roman";
-  font-size: 1.2em;
-  text-decoration: none;
-  color: white;
-  letter-spacing: 0.05em;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
 .scrolled {
   background-color: white;
-  box-shadow: 0 15px 35px rgba(126,87,88,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+.navbar-links {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+
   a {
+    text-decoration: none;
     color: black;
-    @include text-shadow;
+    font-family: "InfoDispSemiBold Roman";
+  }
+}
+
+.navbar-burger {
+  position: absolute;
+  top: 5.5px;
+  right: 10px;
+
+  i {
+    font-size: 19px;
+  }
+}
+
+.navbar-burger > button {
+  background-color: rgba(255,255,255,0) !important;
+  outline-color: white !important;
+
+  &:focus {
+    outline: 0 !important;
   }
 }
 
 @include from-medium {
-    .home-navbar {
+    .navbar-seven {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
         padding-top: 0;
         padding-left: 20px;
-        nav {
+
+        .navbar-links {
+          display: inline;
             a {
-                margin: 0 20px;
-                font-size: 1.4em;
+                margin: 0 10px;
+                font-size: 19px;
             }
         }
-    }
-}
 
-@include from-large {
-    .home-navbar {
-        nav {
-            a {
-                margin: 0 30px;
-            }
+        .navbar-burger {
+          display: none;
         }
     }
 }
@@ -100,7 +151,8 @@ body {
 
 .home-cover {
   // width: 100vw;
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 50.8px);
+  max-height: 1080px;
   position: relative;
 }
 

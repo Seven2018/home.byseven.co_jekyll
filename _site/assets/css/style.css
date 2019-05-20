@@ -503,75 +503,115 @@
 	src: url("../fonts/InfoTextSemiboldTf-Roman.otf");
 }
 */
-p {
-  font-size: 1.3rem;
-  font-family: "InfoDispBook Roman"; }
+body {
+  max-width: 1920px;
+  margin: 0 auto; }
+
+h1 {
+  font-family: "InfoDispBold Roman";
+  font-size: 24px; }
+  @media only screen and (min-width: 37.5em) {
+    h1 {
+      font-size: 28px; } }
+  @media only screen and (min-width: 64em) {
+    h1 {
+      font-size: 40px; } }
 
 h2 {
-  font-family: "InfoDispBold Roman";
-  font-size: 2.4rem;
-  margin: 15px 0 35px 0; }
+  font-family: "InfoText Normal";
+  font-size: 20px; }
+  @media only screen and (min-width: 37.5em) {
+    h2 {
+      font-size: 24px; } }
+  @media only screen and (min-width: 64em) {
+    h2 {
+      font-size: 30px; } }
 
-h4 {
-  font-size: 1.4rem;
-  font-family: "InfoDispBold Roman";
-  margin: 0; }
+h3 {
+  font-family: "Infotext Normal";
+  font-size: 16px; }
+  @media only screen and (min-width: 37.5em) {
+    h3 {
+      font-size: 20px; } }
+  @media only screen and (min-width: 64em) {
+    h3 {
+      font-size: 24px; } }
 
-body {
-  margin: 0; }
+a {
+  color: black;
+  font-family: "InfoDispSemiBold Roman"; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: black; }
+
+p {
+  font-family: "InfoText Normal";
+  font-size: 16px; }
+  @media only screen and (min-width: 64em) {
+    p {
+      font-size: 20px; } }
 
 .home-wrapper {
   position: relative;
   height: 100%; }
 
-.home-navbar {
-  z-index: 10000;
-  height: 8vh;
+.navbar-seven {
+  background-color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 20px;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  transition: 0.5s background-color ease;
-  padding-top: 1rem; }
-  .home-navbar .home-logo {
-    height: 100%;
-    width: auto; }
-  .home-navbar .home-navbar-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 10px; }
-
-.home-navbar-links > a {
-  margin: 0 10px;
-  font-family: "InfoDispSemibold Roman";
-  font-size: 1.2em;
-  text-decoration: none;
-  color: white;
-  letter-spacing: 0.05em;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); }
+  z-index: 10;
+  transition: all 0.8s ease; }
+  .navbar-seven img {
+    width: 150px;
+    margin: 7px 0; }
 
 .scrolled {
-  background-color: white;
-  box-shadow: 0 15px 35px rgba(126, 87, 88, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
-  .scrolled a {
+  background-color: white; }
+
+.navbar-links {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  display: none; }
+  .navbar-links a {
+    text-decoration: none;
     color: black;
-    text-shadow: none; }
+    font-family: "InfoDispSemiBold Roman"; }
+
+.navbar-burger {
+  position: absolute;
+  top: 5.5px;
+  right: 10px; }
+  .navbar-burger i {
+    font-size: 19px; }
+
+.navbar-burger > button {
+  background-color: rgba(255, 255, 255, 0) !important;
+  outline-color: white !important; }
+  .navbar-burger > button:focus {
+    outline: 0 !important; }
 
 @media only screen and (min-width: 37.5em) {
-  .home-navbar {
+  .navbar-seven {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 0;
     padding-left: 20px; }
-    .home-navbar nav a {
-      margin: 0 20px;
-      font-size: 1.4em; } }
-@media only screen and (min-width: 64em) {
-  .home-navbar nav a {
-    margin: 0 30px; } }
+    .navbar-seven .navbar-links {
+      display: inline; }
+      .navbar-seven .navbar-links a {
+        margin: 0 10px;
+        font-size: 19px; }
+    .navbar-seven .navbar-burger {
+      display: none; } }
 .home-cover {
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 50.8px);
+  max-height: 1080px;
   position: relative; }
 
 .home-illustration {
