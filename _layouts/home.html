@@ -1,0 +1,156 @@
+---
+layout: base
+---
+
+<div class="home-cover">
+  <img src="/assets/img/Illustration_Header.png" alt="" class="home-illustration">
+</div>
+<div class="home-presentation">
+  <a id="description-anchor"></a>
+  <div class="home-presentation-content">
+    <div class="home-presentation-text">
+      <div class="home-presentation-description">
+        <h2>BONJOUR ET BIENVENUE !</h2>
+        <p>Pour vous sentir comme à la maison, nous vous proposons un espace de co-working de 140m² proche de la place de la République dans le Quartier Oberkampf, ouvert 7j/7, 24h/24. Il est agréable, lumineux et dynamique !</p>
+        <p>Plusieurs start-ups nous ont déjà rejoint (tech, web, mode, consulting). Très clair, aménagé (tables, chaises, rangements), vous n'avez plus qu'à poser votre ordinateur pour travailler.</p>
+      </div>
+      <div class="home-presentation-features-container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4 col-sm-offset-2 col-lg-5ths col-lg-offset-0">
+              <div class="home-presentation-features">
+                <h3>INTERNET</h3>
+                <p>Wifi</p>
+                <p>Accès serveur</p>
+                <p>Fibre</p>
+              </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-lg-5ths col-lg-offset-0">
+            <div class="home-presentation-features">
+              <h3>SÉCURITÉ</h3>
+              <p>Accès par badge</p>
+              <p>Casier fermé</p>
+              <p class='blank'></p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-sm-offset-2 col-lg-5ths col-lg-offset-0">
+              <div class="home-presentation-features">
+                <h3>CONFORT</h3>
+                <p>Coin Cafét'</p>
+                <p>Cuisine</p>
+                <p>Salle à manger</p>
+                <p>Espace d'attente</p>
+                <p>Espace détente</p>
+                <p>Accès handicapés</p>
+                <p>Ménage</p>
+              </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-sm-offset-1 col-lg-5ths col-lg-offset-0">
+              <div class="home-presentation-features">
+                <h3>ÉQUIPEMENT</h3>
+                <p>Tables/Chaises</p>
+                <p>Imprimantes</p>
+                <p>Scanner</p>
+                <p>Photocopieur</p>
+                <p>Téléphone</p>
+                <p>Ecran TV</p>
+                <p>Vidéo projecteur</p>
+              </div>
+          </div>
+          <div class="col-xs-6 col-sm-4 col-sm-offset-2 col-lg-5ths col-lg-offset-0">
+              <div class="home-presentation-features">
+                <h3>SERVICES</h3>
+                <p>Rangements individuels</p>
+                <p>Salle de réunion partagée</p>
+                <p>Réception courrier</p>
+                <p>Accès 24/7</p>
+                <p>Domiciliation</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-presentation-carousel">
+      <button class="btn btn-lg btn-carousel" data-toggle="modal" data-target="#picturesModal">Voir les photos</button>
+    </div>
+    <div class="home-price">
+      <a id="price-anchor"></a>
+      <h3>Simple et flexible</h3>
+      <p>Pour une durée minimum de 3 mois, contrat de prestation de service, sans frais d'entrée, avec dépôt de garantie de 3 mois.</p>
+      <h3 class='price'>250€ HT / poste / mois</h3>
+    </div>
+  </div>
+</div>
+<div class="home-contact">
+  <div class="home-contact-content">
+    <div class="home-map"></div>
+    <div class="home-contact-address">
+      <h3>Localisation et transports</h3>
+      <br>
+      <br>
+      <h3>Home</h3>
+      <h3>5, rue Moret</h3>
+      <h3>75011 Paris</h3>
+      <br>
+      <br>
+      <h3>Métro <img src="/assets/img/logo-metro-2.svg" alt="" class='metro-line'> Ménilmontant</h3>
+      <h3>Métro <img src="/assets/img/logo-metro-3.svg" alt="" class='metro-line'> Rue Saint Maur</h3>
+      <h3>Métro <img src="/assets/img/logo-metro-9.svg" alt="" class='metro-line'> Oberkampf</h3>
+    </div>
+  </div>
+</div>
+<div class="home-contact-us">
+  <a id="contact-anchor"></a>
+  <h2>Vous êtes interessé et vous souhaitez venir visiter la HOME ?</h2>
+  <h3>Nous avons hâte de vous rencontrer !</h3>
+  <div class="home-contact-us-buttons">
+    <a href="" class="home-button-contact" data-toggle='modal' data-target='#contactUs'>Contactez-nous</a>
+  </div>
+</div>
+
+<!-- Contac Modal -->
+<div class="modal fade" id="contactUs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    {% include contact-modal.html %}
+  </div>
+</div>
+
+<!-- Pictures Modal -->
+  <div class="modal fade" id="picturesModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+<!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+     <img class="img-responsive" src="http://placehold.it/1200x600/555/000&text=One" alt="...">
+      <div class="carousel-caption">
+        One Image
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive" src="http://placehold.it/1200x600/fffccc/000&text=Two" alt="...">
+      <div class="carousel-caption">
+        Another Image
+      </div>
+    </div>
+     <div class="item">
+      <img class="img-responsive" src="http://placehold.it/1200x600/fcf00c/000&text=Three" alt="...">
+      <div class="carousel-caption">
+        Another Image
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+    </div>
+  </div>
+</div>
+</div>
