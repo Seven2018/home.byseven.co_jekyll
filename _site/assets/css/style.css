@@ -6296,16 +6296,17 @@ button.close {
 /* --- super wide screens, from 1440px --- */
 .navbar-seven {
   background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
   top: 0;
   z-index: 10;
   transition: all 0.8s ease; }
   .navbar-seven img {
-    width: 150px;
+    height: 33px;
     margin: 7px 0; }
 
 .scrolled {
@@ -12764,11 +12765,11 @@ p {
 
 .home-cover {
   height: 100vh;
-  max-height: 1080px;
+  max-width: 1440px;
   margin-top: -50.8px;
-  background-image: url("/assets/img/Illustration_Header.png");
+  background-image: url("/assets/img/HEADER_HOME.png");
   background-size: cover;
-  background-position: 85% 100%;
+  background-position: 80.5% 100%;
   position: relative; }
 
 .home-illustration {
@@ -12938,7 +12939,7 @@ p {
         font-size: 30px; } }
 
 .home-contact-us {
-  background-image: url("/assets/img/FOND_BLEU.png");
+  background-image: url("/assets/img/FOOTER_HOME.png");
   background-size: cover;
   background-position: center;
   padding: 50px;

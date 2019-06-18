@@ -3,18 +3,20 @@
 
 .navbar-seven {
   background-color: rgba(255,255,255,0);
+  width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
+  // position: -webkit-sticky;
   top: 0;
   z-index: 10;
   transition: all 0.8s ease;
 
   img {
-    // height: 33px;
-    width: 150px;
+    height: 33px;
+    // width: 150px;
     margin: 7px 0;
   }
 }

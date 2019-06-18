@@ -65,13 +65,14 @@ p {
 // COVER
 
 .home-cover {
-  // width: 100vw;
   height: 100vh;
-  max-height: 1080px;
+  // max-height: 1080px;
+  // width: 100vw;
+  max-width: 1440px;
   margin-top: -50.8px;
-  background-image: url('/assets/img/Illustration_Header.png');
+  background-image: url('/assets/img/HEADER_HOME.png');
   background-size: cover;
-  background-position: 85% 100%;
+  background-position: 80.5% 100%;
   position: relative;
 }
 
@@ -331,7 +332,7 @@ p {
 // CONTACT US
 
 .home-contact-us {
-  background-image: url("/assets/img/FOND_BLEU.png");
+  background-image: url("/assets/img/FOOTER_HOME.png");
   background-size: cover;
   background-position: center;
   padding: 50px;
