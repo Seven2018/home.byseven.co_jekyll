@@ -12766,7 +12766,6 @@ p {
 .home-cover {
   height: 100vh;
   max-width: 1440px;
-  margin-top: -50.8px;
   background-image: url("/assets/img/HEADER_HOME.png");
   background-size: cover;
   background-position: 80.5% 100%;
