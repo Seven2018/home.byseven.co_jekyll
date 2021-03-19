@@ -6348,44 +6348,9 @@ button.close {
       .navbar-seven .navbar-links a {
         margin: 0 20px;
         font-size: 19px; } }
-.footer-seven, .footer-seven-training-page {
-  height: 87px;
-  padding: 15px 30px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: flex-end; }
-  .footer-seven p, .footer-seven a, .footer-seven-training-page p, .footer-seven-training-page a {
-    margin: 0; }
-  .footer-seven a, .footer-seven-training-page a {
-    color: white; }
-    .footer-seven a:hover, .footer-seven-training-page a:hover {
-      text-decoration: none;
-      color: #FBC84A; }
-  @media only screen and (min-width: 37.5em) {
-    .footer-seven, .footer-seven-training-page {
-      padding: 20px 70px; } }
-
-.footer-link-linkedin {
-  margin-left: 15px;
-  transition: all .25s ease-in-out;
-  cursor: pointer; }
-  .footer-link-linkedin i {
-    font-size: 2rem; }
-  .footer-link-linkedin img {
-    height: 20px; }
-
-.footer-seven .footer-link-linkedin {
-  color: white; }
-
-.footer-seven-training-page .footer-link-linkedin {
-  color: black; }
-
 .footer-lab-seven {
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  min-height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -6402,7 +6367,9 @@ button.close {
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.8); }
+    line-height: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0; }
     .footer-lab-seven a:hover {
       color: white; }
   .footer-lab-seven p, .footer-lab-seven a {
@@ -6443,7 +6410,7 @@ button.close {
       margin: 0; } }
 
 #seven-logo-footer {
-  height: 30px; }
+  height: 5rem; }
 
 .footer-lab-media {
   margin: 0 1rem; }
@@ -12920,18 +12887,19 @@ span {
   .home-presentation h2 {
     color: black; }
   @media only screen and (min-width: 64em) {
-    .home-presentation {
-      padding: 100px; }
-      .home-presentation h4 {
-        font-weight: 18px; } }
+    .home-presentation h4 {
+      font-weight: 18px; } }
 
 #description-anchor {
   position: absolute;
-  top: 0; }
+  top: -94px; }
+
+@media only screen and (min-width: 64em) {
+  .home-presentation-content {
+    padding: 0 50px; } }
 
 .home-presentation-description {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12940,7 +12908,6 @@ span {
     margin-top: 0; }
   @media only screen and (min-width: 64em) {
     .home-presentation-description {
-      margin-top: 0px;
       justify-content: space-between; } }
 
 .fas {
@@ -12984,7 +12951,7 @@ span {
 .home-price-interest-info {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 80px; }
+  margin: 80px 0; }
   @media only screen and (min-width: 64em) {
     .home-price-interest-info {
       grid-template-columns: 1fr 1fr; } }

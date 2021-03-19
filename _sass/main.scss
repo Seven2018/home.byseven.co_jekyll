@@ -171,7 +171,6 @@ span {
     color: black;
   }
   @include from-medium-high {
-    padding: 100px;
     h4 {
       font-weight: 18px;
     }
@@ -180,12 +179,17 @@ span {
 
 #description-anchor {
   position: absolute;
-  top: 0;
+  top: -94px;
+}
+
+.home-presentation-content {
+  @include from-large {
+    padding: 0 50px;
+  }
 }
 
 .home-presentation-description {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -196,7 +200,6 @@ span {
   }
 
   @include from-medium-high {
-    margin-top: 0px;
     justify-content: space-between;
   }
 }
@@ -258,7 +261,7 @@ span {
 .home-price-interest-info {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 80px;
+  margin: 80px 0;
   @include from-medium-high {
     grid-template-columns: 1fr 1fr;
   }
