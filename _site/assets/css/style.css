@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6299,14 +6300,15 @@ button.close {
   width: 100%;
   max-width: 1440px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
   position: fixed;
   top: 0;
   z-index: 10;
   transition: all 0.8s ease; }
   .navbar-seven img {
-    height: 33px;
+    height: 80px;
     margin: 7px 0; }
 
 .scrolled {
@@ -6317,12 +6319,21 @@ button.close {
   margin: 0 10px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  display: none; }
+  align-items: center; }
   .navbar-links a {
-    text-decoration: none;
-    color: black;
-    font-family: "InfoDispSemiBold Roman"; }
+    font-size: 16px;
+    background-color: #3DA1A9;
+    color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700; }
+  .navbar-links a:hover {
+    color: #3DA1A9;
+    border: 2px solid #3DA1A9;
+    background-color: white; }
 
 @media only screen and (min-width: 37.5em) {
   .navbar-seven {
@@ -6336,104 +6347,174 @@ button.close {
       justify-content: flex-end; }
       .navbar-seven .navbar-links a {
         margin: 0 20px;
-        font-size: 19px;
-        border: solid 3px rgba(255, 255, 255, 0); }
-        .navbar-seven .navbar-links a:hover {
-          border-bottom: solid 3px #3da1a9; } }
-.footer {
-  min-height: 250px;
-  padding: 25px 50px;
-  background-color: #262A2D;
+        font-size: 19px; } }
+.footer-seven, .footer-seven-training-page {
+  height: 87px;
+  padding: 15px 30px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: column; }
-  @media only screen and (min-width: 64em) {
-    .footer {
-      flex-direction: row; } }
-
-.footer-main {
-  text-align: center;
-  margin: 10px 0; }
-  @media only screen and (min-width: 64em) {
-    .footer-main {
-      display: block;
-      width: 20%;
-      text-align: left;
-      padding-right: 20px;
-      border-right: 3px solid rgba(255, 255, 255, 0.7); } }
-
-.footer-main > p {
-  margin: 0 auto;
-  text-align: center; }
-  @media only screen and (min-width: 64em) {
-    .footer-main > p {
-      text-align: left; } }
-
-.footer-categories-container {
-  display: grid; }
-  @media only screen and (min-width: 64em) {
-    .footer-categories-container {
-      display: flex;
-      justify-content: space-between;
-      flex-grow: 1;
-      width: 80%; } }
-
-.footer-categories {
-  width: auto;
-  height: auto;
-  text-align: center;
-  margin: 10px 0; }
-  @media only screen and (min-width: 64em) {
-    .footer-categories {
-      width: 200px;
-      text-align: left;
-      padding-left: 60px; } }
-
-#footer-categories1 {
-  grid-column: 1;
-  grid-row: 1; }
-
-#footer-categories2 {
-  grid-column: 2;
-  grid-row: 1; }
-
-#footer-categories3 {
-  grid-column: 1;
-  grid-row: 2; }
-
-#footer-categories4 {
-  grid-column: 2;
-  grid-row: 2; }
-
-.footer-links {
-  display: flex;
-  flex-direction: column; }
-
-.footer-links > a {
-  margin: 0; }
-
-.footer-main h3, .footer-main h4, .footer-categories h3, .footer-categories h4 {
-  font-family: "InfoDispBook Roman";
-  color: white; }
-.footer-main h3, .footer-categories h3 {
-  margin: 20px 0; }
+  flex-direction: row;
+  align-items: flex-end; }
+  .footer-seven p, .footer-seven a, .footer-seven-training-page p, .footer-seven-training-page a {
+    margin: 0; }
+  .footer-seven a, .footer-seven-training-page a {
+    color: white; }
+    .footer-seven a:hover, .footer-seven-training-page a:hover {
+      text-decoration: none;
+      color: #FBC84A; }
   @media only screen and (min-width: 37.5em) {
-    .footer-main h3, .footer-categories h3 {
-      font-size: 24px;
-      margin: 17px 0; } }
-.footer-main h4, .footer-categories h4 {
-  font-size: 18px;
-  margin: 20px 0; }
-.footer-main p, .footer-main a, .footer-categories p, .footer-categories a {
-  font-family: "InfoDispBook Roman";
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7); }
-  @media only screen and (min-width: 64em) {
-    .footer-main p, .footer-main a, .footer-categories p, .footer-categories a {
-      width: auto;
-      font-size: 20px; } }
-.footer-main a:hover, .footer-categories a:hover {
+    .footer-seven, .footer-seven-training-page {
+      padding: 20px 70px; } }
+
+.footer-link-linkedin {
+  margin-left: 15px;
+  transition: all .25s ease-in-out;
+  cursor: pointer; }
+  .footer-link-linkedin i {
+    font-size: 2rem; }
+  .footer-link-linkedin img {
+    height: 20px; }
+
+.footer-seven .footer-link-linkedin {
   color: white; }
+
+.footer-seven-training-page .footer-link-linkedin {
+  color: black; }
+
+.footer-lab-seven {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: black;
+  padding: 2rem; }
+  .footer-lab-seven p {
+    width: 100px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: white; }
+  .footer-lab-seven a {
+    width: 100px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8); }
+    .footer-lab-seven a:hover {
+      color: white; }
+  .footer-lab-seven p, .footer-lab-seven a {
+    margin-bottom: 1rem; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-seven {
+      height: 160px;
+      padding: 3rem 6rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; } }
+
+.footer-lab-logo {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .footer-lab-logo img {
+    margin-bottom: 1rem; }
+  .footer-lab-logo p {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin: 0; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-logo {
+      border-right: 2px solid white;
+      padding-right: 3rem;
+      margin-bottom: 0; }
+      .footer-lab-logo img {
+        margin: 1rem; } }
+
+.footer-lab-div {
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-div {
+      margin: 0; } }
+
+#seven-logo-footer {
+  height: 30px; }
+
+.footer-lab-media {
+  margin: 0 1rem; }
+  .footer-lab-media p {
+    width: auto; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-lab-media {
+      margin: 0 2rem 0 0; } }
+
+.footer-lab-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px; }
+  .footer-lab-media-icons a {
+    margin: 0;
+    transition: all .25s ease-in-out;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 300; }
+    .footer-lab-media-icons a i {
+      font-size: 14px; }
+    .footer-lab-media-icons a:hover {
+      color: #95B9DB; }
+
+.footer-lab-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .footer-lab-links a:nth-of-type(1):hover {
+    color: white; }
+  .footer-lab-links a:nth-of-type(2):hover {
+    color: #FBC84A; }
+  .footer-lab-links a:nth-of-type(3):hover {
+    color: #95B9DB; }
+  .footer-lab-links a:nth-of-type(4):hover {
+    color: #3DA1A9; }
+  .footer-lab-links a:nth-of-type(5):hover {
+    color: #E95F48; }
+
+.footer-trainings-seven {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: minmax(75px, auto);
+  background-color: black;
+  padding: 20px 50px;
+  margin-top: 50px; }
+  .footer-trainings-seven p {
+    width: 100px;
+    font-family: 'Montserrat';
+    font-weight: 700; }
+  .footer-trainings-seven a {
+    width: 100px;
+    font-family: 'Montserrat';
+    font-weight: 200; }
+  @media only screen and (min-width: 37.5em) {
+    .footer-trainings-seven {
+      height: 170px;
+      padding: 30px 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; } }
+
+.footer-seven-training-page p {
+  color: black; }
+
+.flex-row-between-start {
+  display: flex; }
 
 /*!
  * Bootstrap v3.4.1 (https://getbootstrap.com/)
@@ -12716,8 +12797,9 @@ body {
   margin: 0 auto; }
 
 h1 {
-  font-family: "InfoDispBold Roman";
-  font-size: 24px; }
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700; }
   @media only screen and (min-width: 37.5em) {
     h1 {
       font-size: 28px; } }
@@ -12726,7 +12808,7 @@ h1 {
       font-size: 40px; } }
 
 h2 {
-  font-family: "InfoDispBold Roman";
+  font-family: "Montserrat";
   font-size: 20px; }
   @media only screen and (min-width: 37.5em) {
     h2 {
@@ -12736,7 +12818,7 @@ h2 {
       font-size: 30px; } }
 
 h3 {
-  font-family: "Infotext Normal";
+  font-family: "Montserrat";
   font-size: 16px; }
   @media only screen and (min-width: 37.5em) {
     h3 {
@@ -12747,116 +12829,142 @@ h3 {
 
 a {
   color: black;
-  font-family: "InfoDispSemiBold Roman"; }
+  font-family: "Montserrat"; }
   a:hover, a:focus {
     text-decoration: none;
     color: black; }
 
 p {
-  font-family: "InfoText Normal";
-  font-size: 16px; }
+  font-family: "Montserrat";
+  font-size: 12px; }
   @media only screen and (min-width: 64em) {
     p {
-      font-size: 20px; } }
+      font-size: 14px; } }
+
+h4 {
+  font-size: 16px; }
+  @media only screen and (min-width: 64em) {
+    h4 {
+      font-size: 18px; } }
+
+span {
+  color: #3DA1A9; }
 
 .home-cover {
   height: 100vh;
   max-width: 1440px;
-  background-image: url("/assets/img/HEADER_HOME.png");
+  background-image: url("/assets/img/headhome.png");
   background-size: cover;
   background-position: 0% 100%;
-  position: relative; }
+  display: flex;
+  justify-content: left; }
+  @media only screen and (min-width: 37.5em) {
+    .home-cover {
+      align-items: center; } }
 
-.home-illustration {
+.home-cover-info {
+  height: 180px;
   width: 100%;
-  height: 100vh;
-  z-index: -1;
-  position: absolute;
-  bottom: 0; }
+  background-color: white;
+  border: 1px solid white;
+  padding: 20px;
+  font-family: 'Montserrat'; }
+  .home-cover-info .home-coworking {
+    font-size: 35px;
+    color: #3DA1A9;
+    margin-top: 80px;
+    text-align: center; }
+  .home-cover-info h5 {
+    display: none; }
+  .home-cover-info .home-cover-button a {
+    display: none; }
+  @media only screen and (min-width: 37.5em) {
+    .home-cover-info {
+      margin-top: 0;
+      width: 375px;
+      height: 435px;
+      margin-left: 125px;
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 15px;
+      padding: 20px; }
+      .home-cover-info .home-coworking {
+        color: #3DA1A9;
+        font-size: 55px;
+        margin: 15px 0px;
+        text-align: none; }
+      .home-cover-info h5 {
+        display: inherit;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        font-size: 20px; }
+      .home-cover-info .home-cover-button
+      a {
+        display: inherit;
+        font-size: 16px;
+        border: 2px solid #3DA1A9;
+        padding: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        margin: 40px 60px;
+        font-weight: 700; }
+      .home-cover-info a:hover {
+        background-color: #3DA1A9;
+        color: white; } }
 
 .home-presentation {
-  padding: 50px;
+  padding: 0;
   position: relative; }
   .home-presentation h2 {
-    color: #4f6453; }
+    color: black; }
   @media only screen and (min-width: 64em) {
     .home-presentation {
-      padding: 50px 200px; } }
-  @media only screen and (min-width: 80em) {
-    .home-presentation {
-      padding: 100px 200px; } }
+      padding: 100px; }
+      .home-presentation h4 {
+        font-weight: 18px; } }
 
 #description-anchor {
   position: absolute;
   top: 0; }
 
 .home-presentation-description {
-  margin-bottom: 50px; }
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
   .home-presentation-description h2 {
     margin-top: 0; }
-
-.home-presentation-features {
-  margin-bottom: 30px; }
-  .home-presentation-features h3 {
-    color: #4f6453;
-    font-family: 'InfoDispBold Roman';
-    margin: 0; }
-  .home-presentation-features p {
-    margin: 0; }
-
-.blank {
-  height: 22px; }
   @media only screen and (min-width: 64em) {
-    .blank {
-      height: 28px; } }
+    .home-presentation-description {
+      margin-top: 0px;
+      justify-content: space-between; } }
 
-.home-presentation-carousel {
-  margin: 50px 0;
-  background-image: url("/assets/img/home-presentation.jpg");
-  background-size: cover;
-  background-position: 0 100%;
-  height: 60vh;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center; }
-  @media only screen and (min-width: 80em) {
-    .home-presentation-carousel {
-      margin: 100px 0; } }
+.fas {
+  color: #3DA1A9; }
 
-.btn-carousel {
-  background-color: #4f6453;
-  color: white;
-  border-radius: 0;
-  margin-bottom: 50px;
-  font-family: 'InfoText Normal'; }
-  .btn-carousel:focus {
-    outline: none;
-    color: white; }
-  .btn-carousel:hover {
-    color: white;
-    background-color: rgba(79, 100, 83, 0.9); }
-
-.modal {
-  text-align: center;
-  padding: 0 !important; }
-
-.modal:before {
-  content: '';
-  display: inline-block;
+.mySlides {
+  width: 100%;
   height: 100%;
-  vertical-align: middle;
-  margin-right: -4px; }
-
-.modal-dialog {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle; }
+  object-fit: cover; }
+  @media only screen and (min-width: 37.5em) {
+    .mySlides {
+      height: 500px; } }
 
 .home-price {
   text-align: center;
   position: relative; }
+  .home-price p {
+    text-align: center;
+    font-size: 16px; }
   .home-price h3 {
-    font-size: 20px; }
+    margin-top: 0px;
+    font-size: 35px;
+    color: #3DA1A9;
+    font-weight: 600; }
     @media only screen and (min-width: 37.5em) {
       .home-price h3 {
         font-size: 24px; } }
@@ -12867,76 +12975,84 @@ p {
     position: absolute;
     top: -100px; }
   .home-price .price {
-    font-family: 'InfoDispBold Roman';
-    color: #4f6453;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
     margin-bottom: 0; }
 
-.home-contact {
-  padding: 0 50px 50px 50px;
-  display: flex;
-  justify-content: center; }
+.home-price-interest-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 80px; }
   @media only screen and (min-width: 64em) {
-    .home-contact {
-      padding: 0 200px 100px 200px; } }
+    .home-price-interest-info {
+      grid-template-columns: 1fr 1fr; } }
+
+.price-info {
+  margin: 30px 80px; }
+
+.home-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .home-contact-content {
-  display: flex;
-  flex-direction: column;
   box-shadow: 2px 2px 10px rgba(136, 136, 136, 0.8);
   width: 300px;
-  height: 600px; }
-  @media only screen and (min-width: 64em) {
+  height: 500px; }
+  @media only screen and (min-width: 80em) {
     .home-contact-content {
-      width: 800px;
-      height: 400px;
-      flex-direction: row;
-      align-items: center; } }
+      width: 500px;
+      height: 650px; } }
 
 .metro-line {
   height: 25px; }
-  @media only screen and (min-width: 37.5em) {
+  @media only screen and (min-width: 50em) {
     .metro-line {
       height: 29px; } }
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 80em) {
     .metro-line {
-      height: 35px; } }
+      height: 30px; } }
 
 .home-map {
   background-image: url("/assets/img/google-map.png");
   background-position: center;
   width: 100%;
   min-height: 300px; }
-  @media only screen and (min-width: 64em) {
+  @media only screen and (min-width: 80em) {
     .home-map {
-      width: 50%;
-      min-height: 400px; } }
+      width: 100%;
+      min-height: 350px; } }
 
 .home-contact-address {
-  width: 100%;
-  min-height: 300px;
-  padding: 20px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   text-align: center; }
-  @media only screen and (min-width: 64em) {
-    .home-contact-address {
-      width: 50%;
-      min-height: 400px;
-      text-align: left; } }
   .home-contact-address h3 {
-    font-family: 'InfoDispBold Roman';
-    color: #4f6453;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: black;
     margin: 0;
-    font-size: 20px; }
-    @media only screen and (min-width: 37.5em) {
+    font-size: 14px; }
+  @media only screen and (min-width: 80em) {
+    .home-contact-address {
+      width: 100%;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
       .home-contact-address h3 {
-        font-size: 24px; } }
-    @media only screen and (min-width: 64em) {
-      .home-contact-address h3 {
-        font-size: 30px; } }
+        font-weight: 700;
+        font-family: 'Montserrat';
+        color: black;
+        margin: 0;
+        font-size: 18px; } }
 
 .home-contact-us {
-  background-image: url("/assets/img/FOOTER_HOME.png");
-  background-size: cover;
-  background-position: center;
+  margin-top: 50px;
   padding: 50px;
   text-align: center;
   width: 100%;
@@ -12945,28 +13061,21 @@ p {
   clear: none;
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 64em) {
-    .home-contact-us {
-      padding: 100px; } }
   @media only screen and (min-width: 80em) {
     .home-contact-us {
       height: 450px; } }
 
 .home-contact-us > h2 {
-  font-family: "InfoDispBold Roman";
+  font-family: "Montserrat";
   font-size: 24px;
-  margin: 0 0 30px 0; }
-  @media only screen and (min-width: 64em) {
-    .home-contact-us > h2 {
-      font-size: 40px; } }
+  margin: 0 0 30px 0;
+  font-weight: 700; }
 
 .home-contact-us > h3 {
-  font-family: "InfoText Normal";
+  font-family: "Montserrat";
   font-size: 20px;
-  margin: 30px 0; }
-  @media only screen and (min-width: 64em) {
-    .home-contact-us > h3 {
-      font-size: 30px; } }
+  margin: 30px 0;
+  font-weight: 300; }
 
 .home-contact-us-buttons {
   height: auto;
@@ -12981,21 +13090,56 @@ p {
       height: auto; } }
 
 .home-button-contact {
-  font-family: "InfoDispBold Roman";
-  width: 180px;
-  color: black;
   font-size: 16px;
-  padding: 15px;
-  background-color: #4f6453; }
-  @media only screen and (min-width: 64em) {
-    .home-button-contact {
-      font-size: 24px; } }
+  background-color: #3DA1A9;
+  color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700; }
   .home-button-contact:hover {
-    background-color: rgba(79, 100, 83, 0.8); }
+    color: #3DA1A9;
+    border: 2px solid #3DA1A9;
+    background-color: white; }
+  @media only screen and (min-width: 37.5em) {
+    .home-button-contact {
+      margin: 0px 150px; } }
 
-.contact-button {
-  background-color: rgba(58, 162, 172, 0.7);
-  font-family: 'InfoDispBold Roman';
-  border: none; }
-  .contact-button:hover {
-    background-color: #3aa2ac; }
+.card {
+  margin: 0px 30px;
+  height: 200px;
+  width: 200px;
+  perspective: 100rem;
+  position: relative; }
+  .card p {
+    font-size: 12px;
+    font-weight: 300; }
+  .card__side {
+    height: 100%;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 700ms ease;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: white; }
+    .card__side--back {
+      background-color: white;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  @media only screen and (min-width: 64em) {
+    .card {
+      height: 300px;
+      width: 300px; }
+      .card p {
+        font-size: 14px; } }
