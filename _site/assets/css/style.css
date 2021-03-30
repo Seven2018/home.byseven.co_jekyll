@@ -6321,10 +6321,10 @@ button.close {
   justify-content: flex-end;
   align-items: center; }
   .navbar-links a {
-    font-size: 16px;
+    font-size: 14px;
     background-color: #3DA1A9;
     color: white;
-    padding: 10px;
+    padding: 8px 12px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     display: flex;
@@ -6347,7 +6347,7 @@ button.close {
       justify-content: flex-end; }
       .navbar-seven .navbar-links a {
         margin: 0 20px;
-        font-size: 19px; } }
+        font-size: 14px; } }
 .footer-lab-seven {
   width: 100%;
   min-height: 200px;
@@ -12772,7 +12772,7 @@ h1 {
       font-size: 28px; } }
   @media only screen and (min-width: 64em) {
     h1 {
-      font-size: 40px; } }
+      font-size: 32px; } }
 
 h2 {
   font-family: "Montserrat";
@@ -12782,7 +12782,7 @@ h2 {
       font-size: 24px; } }
   @media only screen and (min-width: 64em) {
     h2 {
-      font-size: 30px; } }
+      font-size: 32px; } }
 
 h3 {
   font-family: "Montserrat";
@@ -12792,7 +12792,7 @@ h3 {
       font-size: 20px; } }
   @media only screen and (min-width: 64em) {
     h3 {
-      font-size: 24px; } }
+      font-size: 20px; } }
 
 a {
   color: black;
@@ -13018,6 +13018,19 @@ span {
         margin: 0;
         font-size: 18px; } }
 
+.home-price-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 650px; }
+  .home-price-info h4 {
+    color: #3DA1A9;
+    font-family: 'Montserrat';
+    font-weight: 300; }
+
+.home-text {
+  margin: 0px 88px; }
+
 .home-contact-us {
   margin-top: 50px;
   padding: 50px;
@@ -13057,10 +13070,11 @@ span {
       height: auto; } }
 
 .home-button-contact {
-  font-size: 16px;
+  max-width: 150px;
+  font-size: 14px;
   background-color: #3DA1A9;
   color: white;
-  padding: 10px;
+  padding: 8px 12px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   display: flex;
@@ -13075,6 +13089,7 @@ span {
       margin: 0px 150px; } }
 
 .card {
+  display: none;
   margin: 0px 30px;
   height: 200px;
   width: 200px;
@@ -13108,5 +13123,32 @@ span {
     .card {
       height: 300px;
       width: 300px; }
+      .card--back {
+        background-color: white;
+        transform: rotateY(180deg); }
       .card p {
         font-size: 14px; } }
+
+.bottom-button {
+  display: flex;
+  justify-content: center; }
+
+.mobile-card {
+  margin: 50px;
+  height: 200px;
+  width: 230px;
+  color: black;
+  display: flex;
+  flex-direction: column; }
+
+.mobile-cards p {
+  font-size: 12px;
+  font-weight: 300; }
+.mobile-cards .mobile-card {
+  margin: 50px;
+  height: 200px;
+  width: 200px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column; }

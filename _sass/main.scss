@@ -17,7 +17,7 @@ h1 {
     }
 
     @include from-large {
-      font-size: 40px;
+      font-size: 32px;
     }
 }
 
@@ -30,7 +30,7 @@ h2 {
     }
 
     @include from-large {
-      font-size: 30px;
+      font-size: 32px;
     }
 }
 
@@ -43,7 +43,7 @@ h3 {
   }
 
   @include from-large {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -350,6 +350,21 @@ span {
 
 }
 
+.home-price-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 650px;
+     h4 {
+      color:#3DA1A9;
+      font-family: 'Montserrat';
+      font-weight: 300;
+    }
+}
+
+.home-text {
+  margin: 0px 88px;
+}
 
 // ---------------------------------------------------------------------
 
@@ -404,10 +419,11 @@ span {
 }
 
 .home-button-contact {
-    font-size: 16px;
+    max-width: 150px;
+    font-size: 14px;
     background-color: #3DA1A9;
     color:white;
-    padding: 10px;
+    padding: 8px 12px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     display: flex;
@@ -425,6 +441,7 @@ span {
 
 
 .card {
+  display:none;
   margin: 0px 30px;
   height: 200px;
   width: 200px;
@@ -470,10 +487,44 @@ span {
   @include from-medium-high {
     height: 300px;
     width: 300px;
+    &--back {
+      background-color: white;
+      transform: rotateY(180deg);
+    }
     p {
       font-size: 14px;
     }
   }
 }
 
+.bottom-button {
+  display: flex;
+  justify-content: center;
+}
+
+  .mobile-card {
+     margin: 50px;
+      height: 200px;
+      width: 230px;
+      color: black;
+      display: flex;
+      flex-direction: column;
+    }
+
+.mobile-cards {
+
+    p {
+    font-size: 12px;
+    font-weight: 300;
+    }
+  .mobile-card {
+     margin: 50px;
+      height: 200px;
+      width: 200px;
+      color: black;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
