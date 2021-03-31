@@ -6302,14 +6302,14 @@ button.close {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 30px;
   position: fixed;
   top: 0;
   z-index: 10;
   transition: all 0.8s ease; }
   .navbar-seven img {
-    height: 80px;
-    margin: 7px 0; }
+    height: 75px;
+    margin: 20px 0; }
 
 .scrolled {
   background-color: white; }
@@ -12859,7 +12859,7 @@ span {
         color: #3DA1A9;
         font-size: 55px;
         margin: 15px 0px;
-        text-align: none; }
+        text-align: left; }
       .home-cover-info h5 {
         display: inherit;
         font-family: 'Montserrat';
