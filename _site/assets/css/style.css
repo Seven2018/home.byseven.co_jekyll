@@ -12759,6 +12759,9 @@ button.close {
 	src: url("../fonts/InfoTextSemiboldTf-Roman.otf");
 }
 */
+html {
+  scroll-behavior: smooth; }
+
 body {
   max-width: 1440px;
   margin: 0 auto; }
@@ -12892,14 +12895,14 @@ span {
 
 #description-anchor {
   position: absolute;
-  top: -94px; }
+  top: -100px; }
 
 @media only screen and (min-width: 64em) {
   .home-presentation-content {
     padding: 0 50px; } }
 
 .home-presentation-description {
-  padding: 5rem 0;
+  padding: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -12912,14 +12915,6 @@ span {
 
 .fas {
   color: #3DA1A9; }
-
-.mySlides {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-  @media only screen and (min-width: 37.5em) {
-    .mySlides {
-      height: 500px; } }
 
 .home-price {
   text-align: center;
@@ -13088,47 +13083,6 @@ span {
     .home-button-contact {
       margin: 0px 150px; } }
 
-.card {
-  display: none;
-  margin: 0px 30px;
-  height: 200px;
-  width: 200px;
-  perspective: 100rem;
-  position: relative; }
-  .card p {
-    font-size: 12px;
-    font-weight: 300; }
-  .card__side {
-    height: 100%;
-    width: 100%;
-    color: black;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 700ms ease;
-    backface-visibility: hidden; }
-    .card__side--front {
-      background-color: white; }
-    .card__side--back {
-      background-color: white;
-      transform: rotateY(180deg); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
-  @media only screen and (min-width: 64em) {
-    .card {
-      height: 300px;
-      width: 300px; }
-      .card--back {
-        background-color: white;
-        transform: rotateY(180deg); }
-      .card p {
-        font-size: 14px; } }
-
 .bottom-button {
   display: flex;
   justify-content: center; }
@@ -13136,19 +13090,33 @@ span {
 .mobile-card {
   margin: 50px;
   height: 200px;
-  width: 230px;
+  width: 300px;
   color: black;
   display: flex;
   flex-direction: column; }
 
-.mobile-cards p {
-  font-size: 12px;
-  font-weight: 300; }
-.mobile-cards .mobile-card {
-  margin: 50px;
-  height: 200px;
-  width: 200px;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column; }
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto; }
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor: pointer; }
+
+.active {
+  background-color: #717171; }
+
+.mySlides img {
+  height: 500px;
+  object-fit: cover; }
+
+.home-presentation-carousel {
+  padding: 5rem; }

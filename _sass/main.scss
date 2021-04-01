@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap");
 
 
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1440px;
   margin: 0 auto;
@@ -179,7 +181,7 @@ span {
 
 #description-anchor {
   position: absolute;
-  top: -94px;
+  top: -100px;
 }
 
 .home-presentation-content {
@@ -189,7 +191,7 @@ span {
 }
 
 .home-presentation-description {
-  padding: 5rem 0;
+  padding: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -209,14 +211,6 @@ span {
   color:#3DA1A9;
 }
 
-.mySlides {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  @include from-medium {
-    height: 500px;
-  }
-}
 
 // -------------------------------------------------------------------
 
@@ -440,62 +434,6 @@ span {
 }
 
 
-.card {
-  display:none;
-  margin: 0px 30px;
-  height: 200px;
-  width: 200px;
-  perspective: 100rem;
-  position: relative;
-
-  p {
-    font-size: 12px;
-    font-weight: 300;
-  }
-
-  &__side {
-    height: 100%;
-    width: 100%;
-    color: black;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 700ms ease;
-    backface-visibility: hidden;
-
-    &--front {
-      background-color: white;
-    }
-
-    &--back {
-      background-color: white;
-      transform: rotateY(180deg);
-    }
-  }
-
-  &:hover &__side--front {
-    transform: rotateY(-180deg);
-  }
-
-  &:hover &__side--back {
-    transform: rotateY(0);
-  }
-
-  @include from-medium-high {
-    height: 300px;
-    width: 300px;
-    &--back {
-      background-color: white;
-      transform: rotateY(180deg);
-    }
-    p {
-      font-size: 14px;
-    }
-  }
-}
 
 .bottom-button {
   display: flex;
@@ -503,28 +441,45 @@ span {
 }
 
   .mobile-card {
-     margin: 50px;
+      margin: 50px;
       height: 200px;
-      width: 230px;
+      width: 300px;
       color: black;
       display: flex;
       flex-direction: column;
     }
 
-.mobile-cards {
 
-    p {
-    font-size: 12px;
-    font-weight: 300;
-    }
-  .mobile-card {
-     margin: 50px;
-      height: 200px;
-      width: 200px;
-      color: black;
-      font-weight: bold;
-      display: flex;
-      flex-direction: column;
-    }
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  cursor:pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.mySlides {
+  img {
+    height: 500px;
+    object-fit: cover;
   }
+}
 
+.home-presentation-carousel {
+  padding: 5rem;
+}
